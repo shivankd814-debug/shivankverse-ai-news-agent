@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHIVANKVERSE AI NEWS AGENT</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+<div class="brand"><b>SV</b><span>SHIVANKVERSE<small>AI NEWS AGENT</small></span></div>
+<span class="owner">YOUR NEWSROOM</span>
+</header>
+<main>
+<section class="hero">
+<small>GLOBAL TECHNOLOGY INTELLIGENCE</small>
+<h1>Big Tech Stories.<br><em>One clear newsroom.</em></h1>
+<p>दुनिया की टेक खबरें खोजो, चुनो और हिंदी आर्टिकल ड्राफ्ट तैयार करो।</p>
+<button id="refresh">↻ खबरें अपडेट करो</button>
+<span id="updated"></span>
+</section>
+<div class="layout">
+<section class="panel">
+<div class="head"><div><small>GLOBAL FEED</small><h2>Technology radar</h2></div><span>● RSS</span></div>
+<div id="news">खबरें लोड हो रही हैं…</div>
+</section>
+<section class="panel">
+<div class="head"><div><small>EDITORIAL STUDIO</small><h2>Article builder</h2></div></div>
+<label>खबर का शीर्षक</label>
+<input id="title" placeholder="खबर चुनें…">
+<label>मूल स्रोत लिंक</label>
+<input id="source" placeholder="https://…">
+<label>Verified notes</label>
+<textarea id="notes" rows="4" placeholder="आधिकारिक घोषणा, तारीख, आंकड़े…"></textarea>
+<button id="generate" class="primary">✦ हिंदी ड्राफ्ट बनाओ</button>
+<p id="status"></p>
+<label>Editable article draft</label>
+<textarea id="output" rows="15" placeholder="ड्राफ्ट यहाँ आएगा…"></textarea>
+<button id="export">↓ HTML डाउनलोड करो</button>
+<p class="warning">RSS headlines अपने-आप fact-check नहीं होते। AI draft भी publish से पहले जाँचें। Blogger auto-publishing अभी जोड़ा नहीं गया है।</p>
+</section>
+</div>
+</main>
+<footer>© SHIVANKVERSE · Your project source code</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
