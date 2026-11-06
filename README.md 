@@ -1,54 +1,118 @@
 
-# 🌌 SHIVANKVERSE — 3D AI SYSTEM ARCHITECTURE
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:020617,50:312e81,100:0891b2&height=160&text=AI%20NEURAL%20CORE&fontSize=35&fontColor=ffffff&animation=fadeIn" width="100%"/>
+# ⚡ SHIVANKVERSE AI NEWS AGENT
+
+### AUTONOMOUS TECHNOLOGY INTELLIGENCE SYSTEM
+
+*Discover • Research • Analyze • Generate • Publish*
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-00D4AA?style=for-the-badge" />
+<img src="https://img.shields.io/badge/PYTHON-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/FLASK-WEB%20ENGINE-black?style=for-the-badge&logo=flask" />
+
+**An AI-powered technology news platform designed to transform global technology updates into original, human-reviewed articles.**
 
 </div>
+
+---
+
+## 🌌 SYSTEM ARCHITECTURE
+
+<div align="center">
 
 ```mermaid
 flowchart TB
-    A(("🌐 GLOBAL DATA")):::source
+    A(("🌍 GLOBAL NEWS")) --> B["📡 NEWS SCANNER"]
+    B --> C["🔎 RESEARCH ENGINE"]
+    C --> D["🧠 AI ANALYSIS"]
+    D --> E["🛡️ FACT CHECKING"]
+    E --> F["✍️ AI ARTICLE WRITER"]
+    F --> G{"👤 HUMAN APPROVAL"}
+    G -->|Approved| H["📰 BLOGGER PUBLISHING"]
+    G -->|Needs Changes| F
 
-    subgraph CORE["🧠 SHIVANKVERSE INTELLIGENCE CORE"]
-      B["🔭 NEWS HUNTER"]
-      C["🧠 AI RESEARCH"]
-      D["📊 TREND ANALYZER"]
-      E["🛡️ FACT CHECKER"]
-      B --> C --> D --> E
-    end
-
-    subgraph CREATION["⚡ CONTENT GENERATION"]
-      F["✍️ HINDI AI WRITER"]
-      G["🔎 SEO OPTIMIZER"]
-      F --> G
-    end
-
-    subgraph CONTROL["👤 HUMAN CONTROL CENTER"]
-      H["📋 APPROVAL DASHBOARD"]
-      I["🔄 REVISION SYSTEM"]
-      H -->|Changes needed| I
-      I --> F
-    end
-
-    subgraph OUTPUT["🚀 PUBLISHING NETWORK"]
-      J["BLOGGER API"]
-      K["SHIVANKVERSE BLOG"]
-      J --> K
-    end
-
-    A --> B
-    E --> F
-    G --> H
-    H -->|Approved| J
-
-    classDef source fill:#172554,stroke:#38bdf8,color:#fff,stroke-width:2px
-    classDef default fill:#1e1b4b,stroke:#818cf8,color:#fff,stroke-width:2px
+    style A fill:#102A43,stroke:#00D4FF,color:#fff
+    style B fill:#123B55,stroke:#00D4FF,color:#fff
+    style C fill:#123B55,stroke:#00D4FF,color:#fff
+    style D fill:#17365D,stroke:#00D4FF,color:#fff
+    style E fill:#174D45,stroke:#00D4AA,color:#fff
+    style F fill:#17365D,stroke:#00D4FF,color:#fff
+    style G fill:#594016,stroke:#FFCC66,color:#fff
+    style H fill:#174D45,stroke:#00D4AA,color:#fff
 ```
+
+**Conceptual target architecture — not every stage is implemented yet.**
+
+</div>
+
+## 🧠 HOW THE SYSTEM WORKS
+
+| Module | Responsibility |
+|---|---|
+| 📡 News Scanner | Collects technology news from RSS feeds |
+| 🔎 Research Engine | Planned multi-source research |
+| 🧠 AI Analysis | Planned topic and trend analysis |
+| 🛡️ Fact Checker | Planned claim verification |
+| ✍️ AI Writer | Generates article drafts |
+| 👤 Human Approval | Keeps publishing under human control |
+| 📰 Blogger | Planned Blogger API integration |
+
+## ⚙️ CURRENT TECHNOLOGY STACK
 
 <div align="center">
 
-**DISCOVER → THINK → CREATE → APPROVE → PUBLISH**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)
 
 </div>
+
+## 🚀 CURRENT FEATURES
+
+- Technology news feed using RSS.
+- News categories: AI, Chips, Robotics, Space and Quantum.
+- Article drafting endpoint.
+- HTML article export.
+- Flask-based web dashboard.
+- Render deployment.
+
+## 🗺️ DEVELOPMENT ROADMAP
+
+- [x] Flask application setup
+- [x] Technology RSS news feed
+- [x] Article draft endpoint
+- [x] HTML export endpoint
+- [ ] Multi-source research engine
+- [ ] Automated trend detection
+- [ ] Advanced fact verification
+- [ ] SEO article generation
+- [ ] Human approval dashboard
+- [ ] Blogger API publishing
+- [ ] Scheduled autonomous workflow
+
+## 🌐 LIVE PROJECT
+
+<div align="center">
+
+### [OPEN SHIVANKVERSE AI NEWS AGENT](https://shivankverse-ai-news-agent.onrender.com)
+
+### [VISIT SHIVANKVERSE BLOG](https://shivankverse.blogspot.com/)
+
+</div>
+
+---
+
+<div align="center">
+
+### ⚡ BUILT TO EXPLORE THE FUTURE
+
+**SHIVANKVERSE AI**
+
+*From global information to human-approved intelligence.*
+
+</div>
+
