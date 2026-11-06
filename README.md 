@@ -1,0 +1,104 @@
+
+<div align="center">
+
+# 🌌 SHIVANKVERSE
+
+### AI NEWS AGENT
+
+**Discover • Research • Analyze • Create • Publish**
+
+An intelligent AI-powered technology news platform designed to discover trending technology news, research stories, generate Hindi articles and publish them to Blogger with human approval.
+
+![Status](https://img.shields.io/badge/Status-In%20Development-blue)
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)
+![Flask](https://img.shields.io/badge/Backend-Flask-black?logo=flask)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
+
+---
+
+## 🚀 About The Project
+
+**SHIVANKVERSE AI NEWS AGENT** is an AI agent project focused on autonomous technology news discovery and content creation.
+
+Our vision is to build an intelligent system that can independently:
+
+- Discover the latest technology news.
+- Analyze and research important stories.
+- Identify trending technology topics.
+- Generate original Hindi SEO articles.
+- Verify information using multiple sources.
+- Request human approval before publishing.
+- Publish approved articles to Blogger.
+
+## ✨ Features
+
+| Feature | Status |
+|---|---|
+| Technology News RSS Feed | 🟢 Starter built |
+| News Dashboard | 🟢 Built |
+| AI Article Generation | 🟡 Starter implementation |
+| Smart News Ranking | 🔵 Planned |
+| Multi-source Fact Checking | 🔵 Planned |
+| Hindi SEO Content Engine | 🔵 Planned |
+| Human Approval System | 🔵 Planned |
+| Blogger API Integration | 🔵 Planned |
+| Automated Publishing | 🔵 Planned |
+
+## 🧠 AI Agent Workflow
+
+```text
+       NEWS DISCOVERY
+              ↓
+       TREND DETECTION
+              ↓
+       AI RESEARCH
+              ↓
+       FACT VERIFICATION
+              ↓
+       HINDI SEO WRITER
+              ↓
+       HUMAN APPROVAL
+              ↓
+       BLOGGER PUBLISHER
+              ↓
+       SHIVANKVERSE BLOG
+```
+
+## 🛠️ Technology Stack
+
+- Python
+- Flask
+- HTML5
+- CSS3
+- JavaScript
+- RSS / Feedparser
+- Google Blogger API (planned integration)
+- Render Cloud Hosting
+
+## 🌐 Live Project
+
+**Live Dashboard:**
+
+https://shivankverse-ai-news-agent.onrender.com
+
+**Official Blog:**
+
+https://shivankverse.blogspot.com/
+
+## 🎯 Our Mission
+
+To build an intelligent autonomous technology news agent that transforms information into useful, researched and accessible Hindi technology content.
+
+## 👨‍💻 Project Vision
+
+**Built with curiosity. Powered by intelligence. Designed for the future.**
+
+<div align="center">
+
+### SHIVANKVERSE AI
+
+*The Future of Autonomous Technology News.*
+
+</div>
