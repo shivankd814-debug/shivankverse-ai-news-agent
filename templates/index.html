@@ -1,48 +1,133 @@
 
-<!doctype html>
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SHIVANKVERSE AI NEWS AGENT</title>
-<link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <title>SHIVANKVERSE | AI Command Center</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-<header>
-<div class="brand"><b>SV</b><span>SHIVANKVERSE<small>AI NEWS AGENT</small></span></div>
-<span class="owner">YOUR NEWSROOM</span>
-</header>
-<main>
-<section class="hero">
-<small>GLOBAL TECHNOLOGY INTELLIGENCE</small>
-<h1>Big Tech Stories.<br><em>One clear newsroom.</em></h1>
-<p>दुनिया की टेक खबरें खोजो, चुनो और हिंदी आर्टिकल ड्राफ्ट तैयार करो।</p>
-<button id="refresh">↻ खबरें अपडेट करो</button>
-<span id="updated"></span>
-</section>
-<div class="layout">
-<section class="panel">
-<div class="head"><div><small>GLOBAL FEED</small><h2>Technology radar</h2></div><span>● RSS</span></div>
-<div id="news">खबरें लोड हो रही हैं…</div>
-</section>
-<section class="panel">
-<div class="head"><div><small>EDITORIAL STUDIO</small><h2>Article builder</h2></div></div>
-<label>खबर का शीर्षक</label>
-<input id="title" placeholder="खबर चुनें…">
-<label>मूल स्रोत लिंक</label>
-<input id="source" placeholder="https://…">
-<label>Verified notes</label>
-<textarea id="notes" rows="4" placeholder="आधिकारिक घोषणा, तारीख, आंकड़े…"></textarea>
-<button id="generate" class="primary">✦ हिंदी ड्राफ्ट बनाओ</button>
-<p id="status"></p>
-<label>Editable article draft</label>
-<textarea id="output" rows="15" placeholder="ड्राफ्ट यहाँ आएगा…"></textarea>
-<button id="export">↓ HTML डाउनलोड करो</button>
-<p class="warning">RSS headlines अपने-आप fact-check नहीं होते। AI draft भी publish से पहले जाँचें। Blogger auto-publishing अभी जोड़ा नहीं गया है।</p>
-</section>
-</div>
-</main>
-<footer>© SHIVANKVERSE · Your project source code</footer>
-<script src="/static/app.js"></script>
+  <div class="background-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">S</div>
+      <div>
+        <h1>SHIVANKVERSE</h1>
+        <p>INTELLIGENCE SYSTEM</p>
+      </div>
+    </div>
+    <div class="system-status">
+      <span class="status-dot"></span>
+      SYSTEM ONLINE
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">AUTONOMOUS TECHNOLOGY INTELLIGENCE</p>
+        <h2>AI COMMAND<br><span>CENTER</span></h2>
+        <p class="hero-description">
+          Discover technology. Analyze global trends.
+          Create original intelligence.
+        </p>
+        <button id="refreshNews" class="primary-btn">
+          SCAN GLOBAL NEWS ↗
+        </button>
+      </div>
+
+      <div class="core-area">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="core">
+          <div class="core-inner">SV</div>
+        </div>
+        <div class="core-label">AI CORE ACTIVE</div>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span>01 / ENGINE</span>
+        <h3>NEWS SCANNER</h3>
+        <p>Global RSS intelligence</p>
+      </article>
+      <article class="stat-card">
+        <span>02 / ENGINE</span>
+        <h3>AI WRITER</h3>
+        <p>Article generation</p>
+      </article>
+      <article class="stat-card">
+        <span>03 / ENGINE</span>
+        <h3>EDITOR REVIEW</h3>
+        <p>Human approval workflow</p>
+      </article>
+      <article class="stat-card">
+        <span>04 / ENGINE</span>
+        <h3>BLOGGER LINK</h3>
+        <p>Publishing integration planned</p>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <div class="panel news-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">LIVE INTELLIGENCE</p>
+            <h2>Technology Feed</h2>
+          </div>
+          <span class="live-tag">● LIVE FEED</span>
+        </div>
+
+        <div id="newsFeed" class="news-feed">
+          <p class="loading">Loading technology intelligence...</p>
+        </div>
+      </div>
+
+      <div class="panel writer-panel">
+        <p class="eyebrow">CONTENT GENERATOR</p>
+        <h2>AI Article Studio</h2>
+
+        <label for="articleTopic">ARTICLE TOPIC</label>
+        <input id="articleTopic" type="text"
+          placeholder="Enter a technology news topic...">
+
+        <label for="articleLanguage">LANGUAGE</label>
+        <select id="articleLanguage">
+          <option value="Hindi">Hindi</option>
+          <option value="English">English</option>
+          <option value="Hinglish">Hinglish</option>
+        </select>
+
+        <button id="generateDraft" class="primary-btn full-btn">
+          GENERATE ARTICLE ↗
+        </button>
+
+        <div id="draftStatus" class="status-message"></div>
+
+        <label for="draftOutput">ARTICLE DRAFT</label>
+        <textarea id="draftOutput" rows="12"
+          placeholder="Your generated article will appear here..."></textarea>
+
+        <button id="exportDraft" class="secondary-btn full-btn">
+          EXPORT ARTICLE ↓
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <span>SHIVANKVERSE AI</span>
+      <span>BUILDING THE FUTURE OF TECHNOLOGY</span>
+    </footer>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
